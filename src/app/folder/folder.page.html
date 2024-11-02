@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <!-- Sueldo -->
+    <div class="flex justify-content-space-evenly mb-2">
+      <p class="sueldo">Sueldo</p>
+      <i
+        class="fa fa-long-arrow-right icon"
+        aria-hidden="true"
+        style="margin-top: 2px"
+      ></i>
+      <p><i class="fa-solid fa-dollar-sign dolar"></i> 100000</p>
+    </div>
+    <!-- Cuentas -->
+    <div class="flex flex-direction-column mb-1">
+      <ion-accordion-group>
+        <ion-accordion value="first">
+          <ion-item slot="header" class="flex" color="light">
+            <ion-label class="cuentas">Cuentas</ion-label>
+            <ion-label class="total"
+              ><i class="fa-solid fa-dollar-sign dolar"></i> 100000</ion-label
+            >
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <div class="flex justify-content-space-between">
+              <p class="cuentas">Naranja</p>
+              <p class="total">
+                <i class="fa-solid fa-dollar-sign dolar"></i> 100000
+              </p>
+            </div>
+          </div>
+          <!-- A partir de aca es relleno -->
+          <div class="ion-padding" slot="content">
+            <div class="flex justify-content-space-between">
+              <p class="cuentas">Macro</p>
+              <p class="total">
+                <i class="fa-solid fa-dollar-sign dolar"></i> 100000
+              </p>
+            </div>
+          </div>
+          <div class="ion-padding" slot="content">
+            <div class="flex justify-content-space-between">
+              <p class="cuentas">Dexter</p>
+              <p class="total">
+                <i class="fa-solid fa-dollar-sign dolar"></i> 100000
+              </p>
+            </div>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </div>
+    <!-- Sobrante -->
+    <div class="flex flex-direction-column mb-2">
+      <ion-accordion-group>
+        <ion-accordion value="first" toggleIconSlot="none">
+          <ion-item slot="header" class="flex" color="light">
+            <ion-label class="sobrante">Sobrante</ion-label>
+            <ion-label class="totalSobrante"
+              ><i class="fa-solid fa-dollar-sign dolar"></i> 100000</ion-label
+            >
+          </ion-item>
+        </ion-accordion>
+      </ion-accordion-group>
+    </div>
+    <!--  -->
+    <div class="flex justify-content-space-evenly">
+      <div class="flex flex-direction-column gap-05">
+        <p class="sueldo">Gustos</p>
+        <p><i class="fa-solid fa-dollar-sign dolar"></i> 100000</p>
+      </div>
+      <div class="flex flex-direction-column gap-05">
+        <p class="sueldo">Ahorros</p>
+        <p><i class="fa-solid fa-dollar-sign dolar"></i> 100000</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
