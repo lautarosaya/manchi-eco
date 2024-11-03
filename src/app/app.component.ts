@@ -20,24 +20,12 @@ import {
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import {
-  mailOutline,
-  mailSharp,
-  paperPlaneOutline,
-  paperPlaneSharp,
-  heartOutline,
-  heartSharp,
-  archiveOutline,
-  archiveSharp,
-  trashOutline,
-  trashSharp,
-  warningOutline,
-  warningSharp,
-  bookmarkOutline,
-  bookmarkSharp,
   homeSharp,
   homeOutline,
   settingsOutline,
   settingsSharp,
+  downloadOutline,
+  downloadSharp,
 } from 'ionicons/icons';
 
 @Component({
@@ -68,8 +56,9 @@ import {
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inicio', url: '/folder/inbox', icon: 'home' },
-    { title: 'Configuracion', url: '/folder/outbox', icon: 'settings' },
+    { title: 'Inicio', url: 'home', icon: 'home' },
+    { title: 'Ingreso', url: 'ingreso', icon: 'download' },
+    { title: 'Configuracion', url: 'config', icon: 'settings' },
   ];
   constructor() {
     addIcons({
@@ -77,6 +66,8 @@ export class AppComponent {
       homeOutline,
       settingsOutline,
       settingsSharp,
+      downloadOutline,
+      downloadSharp,
     });
   }
 }

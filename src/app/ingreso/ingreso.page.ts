@@ -1,6 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import {
   IonHeader,
   IonToolbar,
@@ -14,14 +14,11 @@ import {
   IonAccordion,
   IonLabel,
 } from '@ionic/angular/standalone';
-import { DatosPage } from '../datos/datos.page';
-import { ConfigPage } from '../config/config.page';
-import { IngresoPage } from '../ingreso/ingreso.page';
 
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-ingreso',
+  templateUrl: './ingreso.page.html',
+  styleUrls: ['./ingreso.page.scss'],
   standalone: true,
   imports: [
     IonLabel,
@@ -35,12 +32,10 @@ import { IngresoPage } from '../ingreso/ingreso.page';
     IonMenuButton,
     IonTitle,
     IonContent,
-    DatosPage,
-    ConfigPage,
-    IngresoPage,
   ],
 })
-export class FolderPage {
-  public folder!: string;
+export class IngresoPage implements OnInit {
   constructor() {}
+
+  ngOnInit() {}
 }
