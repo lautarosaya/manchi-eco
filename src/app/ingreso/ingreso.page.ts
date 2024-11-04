@@ -13,6 +13,11 @@ import {
   IonItem,
   IonAccordion,
   IonLabel,
+  IonList,
+  IonInput,
+  IonSelect,
+  IonSelectOption,
+  IonButton,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -21,6 +26,9 @@ import {
   styleUrls: ['./ingreso.page.scss'],
   standalone: true,
   imports: [
+    IonButton,
+    IonInput,
+    IonList,
     IonLabel,
     IonAccordion,
     IonItem,
@@ -32,6 +40,8 @@ import {
     IonMenuButton,
     IonTitle,
     IonContent,
+    IonSelect,
+    IonSelectOption,
   ],
 })
 export class IngresoPage implements OnInit {
